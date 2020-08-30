@@ -11,7 +11,7 @@ import Hand from './components/pages/Hand';
 const App = () => {
   return (
     <div className='app'>
-      <div className='container'>
+      <div>
         <Router>
           <Navbar />
           <Switch>

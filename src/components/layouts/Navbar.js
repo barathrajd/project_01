@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import Logo from '../../img/logo.svg';
 
 const Navbar = () => {
   return (
     <div>
       <nav className='navbar navbar-expand-lg'>
-        <Link className='navbar-brand' to='/'>
-          Crafts
+        {/* <Link to='/'>
+          <img src={Logo} alt='Logo' width='60px' />
+        </Link> */}
+        <Link className='navbar-brand' style={{ marginLeft: '1rem' }} to='/'>
+          Avira's Artistry
         </Link>
         <button
           className='navbar-toggler'

@@ -15,12 +15,12 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: white;
+  background-color: #ffffff;
   transition: all 0.3s;
 }
 
 .img_group:hover {
-  background-color: whitesmoke;
+  background-color: #e0ffc0;
   cursor: pointer;
 }
 

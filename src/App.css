@@ -2,6 +2,8 @@
 @import './css/footer.css';
 @import './css/home.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,7 @@
 }
 
 .app {
-  background-color: #e0e0e0;
+  background-color: #eeeeee;
 }
 
 a {
@@ -18,7 +20,15 @@ a {
 }
 
 .title_group {
-  background-color: white;
+  background-color: #393e46;
   padding: 1rem;
   margin: 1rem 0;
 }
+
+body {
+  font-family: 'Abel', sans-serif;
+}
+
+/* svg {
+  margin-right: 0rem !important;
+} */

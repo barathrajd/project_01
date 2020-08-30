@@ -3,7 +3,7 @@ import img3 from '../../img/img3.jpg';
 
 const Printed = () => {
   return (
-    <div>
+    <div className='container'>
       <div className='title_group'>
         <h1>Printed Wooden</h1>
         <p>

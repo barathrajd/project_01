@@ -3,7 +3,7 @@ import img3 from '../../img/img3.jpg';
 
 const Hand = () => {
   return (
-    <div>
+    <div className='container'>
       <div className='title_group'>
         <h1>Hand-craved Wooden Candles</h1>
         <p>

@@ -3,7 +3,7 @@ import img3 from '../../img/img3.jpg';
 
 const DIY = () => {
   return (
-    <div>
+    <div className='container'>
       <div className='title_group'>
         <h1>DiyKits</h1>
         <p>
