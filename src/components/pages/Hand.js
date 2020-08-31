@@ -13,7 +13,7 @@ const Hand = () => {
           commodi maxime possimus. Quo?
         </p>
       </div>
-      <div className='grid_home'>
+      <div className='gridhome'>
         <div className='img_group'>
           <div className='title'>Title</div>
           <small>View all</small>

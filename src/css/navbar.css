@@ -3,6 +3,10 @@
   background-color: #213236;
 }
 
+.logo {
+  width: 130px;
+}
+
 .navbar .navbar-toggler {
   border-width: 0.09rem;
   border-color: transparent !important;
@@ -17,14 +21,8 @@
   color: #ffffff !important;
 }
 .navbar .navbar-nav .nav-link {
-  color: #ffffff !important;
   padding: 0rem 0rem !important;
   transition: all 0.3s;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-  color: #ececec !important;
-  transition: ease-in-out 0.5s;
 }
 
 :focus {
@@ -39,10 +37,20 @@
   margin-right: 1rem;
   text-decoration: none;
 }
-
 @media only screen and (max-width: 980px) {
   .navbar ul li {
     text-align: center;
     padding: 0.5rem;
+  }
+  .logo {
+    width: 120px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 80px;
+    height: 20px;
   }
 }

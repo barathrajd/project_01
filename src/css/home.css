@@ -1,63 +1,193 @@
-.section-home {
-  margin: 1rem 0rem;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.home {
+  position: relative;
+}
+.section-quotes .union {
+  position: absolute;
+  top: 390px;
+  z-index: -1;
+}
+h5 {
+  font-size: 6rem !important;
+  font-family: Playfair Display;
+}
+.carousel-caption {
+  text-align: start !important;
+}
+
+.quotes {
+  font-weight: 700;
+  font-style: bolder;
+  font-size: 31px;
+  color: #ffaa89;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn_buy {
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #213236;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 67px;
+  width: 140px;
+}
+
+.title {
+  text-align: center;
+  letter-spacing: 0.105em;
+}
+
+.heading-second {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 3rem 0;
 }
 
 .grid_home {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 0.1rem;
-  row-gap: 0.1rem;
+  row-gap: 2rem;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+
+.grid-content {
+  margin: 0 auto;
+}
+
+.grid-content img {
+  width: 300px;
   margin-bottom: 1rem;
 }
 
-.img_group {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: #ffffff;
-  transition: all 0.3s;
+.section-work {
+  background-image: url('../img/ourwork.png');
+  color: #ffffff;
+  background-size: cover;
+  padding: 3rem;
 }
 
-.img_group:hover {
-  background-color: #e0ffc0;
-  cursor: pointer;
+.content {
+  width: 800px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 39px;
+  letter-spacing: 0.105em;
+  text-transform: capitalize;
+  margin-left: 3rem;
 }
 
-small {
-  color: red;
+.half-circle1 {
+  width: 100%;
+  height: 196px;
+  color: #ffe9e0;
+  background: #ffe9e0;
+  clip-path: ellipse(55% 63% at 14% 111%);
 }
 
-img {
-  margin: 1rem auto;
+.half-circle2 {
+  width: 100%;
+  height: 835px;
+  color: #ffe9e0;
+  background: #ffe9e0;
+  clip-path: circle(66.7% at 100% 100%);
 }
 
-@media screen and (max-width: 1000px) {
+.half-eclip {
+  width: 100%;
+  height: 200px;
+  color: #ffe9e0;
+  background: #ffe9e0;
+  clip-path: ellipse(20% 100% at -1% -1%);
+}
+
+.half-rect {
+  width: 100%;
+  height: 100px;
+  color: #ffe9e0;
+  background: #ffe9e0;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+@media only screen and (max-width: 1000px) {
+  h5 {
+    font-size: 4rem !important;
+    font-family: Playfair Display;
+  }
+
+  .quotes {
+    font-size: 25px;
+  }
+
+  .grid-content img {
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+  .heading-second {
+    font-size: 2rem;
+  }
+  .section-work {
+    padding: 1.1rem;
+  }
+  .content {
+    width: 600px;
+    font-size: 18px;
+    line-height: 29px;
+    margin-left: 1.5rem;
+  }
+  .half-rect {
+    height: 80px;
+  }
+  .half-eclip {
+    height: 100px;
+  }
+  .half-circle1 {
+    clip-path: ellipse(55% 50% at 4% 111%);
+  }
+  .half-circle2 {
+    height: 470px;
+    clip-path: circle(66.7% at 100% 100%);
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .grid_home {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-@media screen and (max-width: 800px) {
-  img {
-    width: 200px;
-    height: 270px;
+  .content {
+    width: 500px;
+    font-size: 15px;
+    line-height: 19px;
+    margin-left: 1rem;
+  }
+  .quotes {
+    font-size: 20px;
   }
 }
-
-@media screen and (max-width: 600px) {
-  img {
-    width: 180px;
-    height: 250px;
-  }
-}
-
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .grid_home {
     grid-template-columns: 1fr;
   }
-  img {
-    width: 230px;
-    height: 300px;
+  .section-work {
+    padding: 1rem;
+  }
+  .content {
+    width: 400px;
+    font-size: 15px;
+    line-height: 19px;
+    margin-left: 1rem;
+  }
+  .quotes {
+    font-size: 20px;
   }
 }

@@ -1,16 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Logo from '../../img/logo.svg';
+import Logo from '../../img/logo.png';
 
 const Navbar = () => {
   return (
     <div>
       <nav className='navbar navbar-expand-lg'>
-        {/* <Link to='/'>
-          <img src={Logo} alt='Logo' width='60px' />
-        </Link> */}
-        <Link className='navbar-brand' style={{ marginLeft: '1rem' }} to='/'>
-          Avira's Artistry
+        <Link to='/'>
+          <img src={Logo} alt='Logo' className='logo' />
         </Link>
         <button
           className='navbar-toggler'
@@ -34,19 +31,29 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/printingwoodenblocks'>
-                Printing Wooden Blocks
+              <Link className='nav-link' to='/aboutus'>
+                About us
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/diykits'>
-                DIY Kits
+              <Link className='nav-link' to='/handcraftedGifts'>
+                Handcrafted gifts
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/handcraftedJewels'>
+                Handcrafted Jewels
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link className='nav-link' to='/handcarvedWoodenCandles'>
-                Hand Carved Wooden Candles
+              <Link className='nav-link' to='/diyKits'>
+                Diy kits
+              </Link>
+            </li>
+            <li className='nav-item contact'>
+              <Link className='nav-link ' to='/contactus'>
+                Contact us
               </Link>
             </li>
           </ul>
